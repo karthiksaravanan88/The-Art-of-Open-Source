@@ -2,36 +2,75 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>The Art of Open Source | Live Lab</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Art of Open Source - A celebration of collaborative development">
+    <title>The Art of Open Source</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <div class="logo">THE ART OF OPEN SORUCE</div> 
-        <div class="status">System Status: <span id="status-mode">UNSTABLE</span></div>
-    </nav>
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">THE ART OF OPEN SOURCE</div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contributors">Contributors</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
     <main>
+        <!-- Hero Section -->
         <section class="hero">
-            <h1>CONTROL IS AN ILLUSION</h1>
-            <p>This repository is a blank canvas. All contributors. One mission.</p>
-            
-            <div class="action-box">
-                <button id="gate-btn">INITIALIZE CORE</button>
+            <div class="container">
+                <h1>Control is an Illusion</h1>
+                <p class="subtitle">This repository is a blank canvas. All contributors. One mission.</p>
+                <button class="cta-button" id="gate-btn">Get Started</button>
             </div>
         </section>
 
-        <section id="gallery" class="grid-container"></section>
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About Open Source</h2>
+                <p>Join a community of developers building incredible projects together.</p>
+            </div>
+        </section>
 
-        <section id="terminal">
-            <div class="terminal-header">bash — 80x24</div>
-            <div class="terminal-body">
-                <p>> Loading contributors.md...</p>
-                <div id="contributor-list">
-                    </div>
+        <!-- Projects Gallery -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2>Featured Projects</h2>
+                <div id="gallery" class="grid-container"></div>
+            </div>
+        </section>
+
+        <!-- Contributors Section -->
+        <section id="contributors" class="contributors">
+            <div class="container">
+                <h2>Our Contributors</h2>
+                <div id="contributor-list" class="contributor-grid"></div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Get Involved</h2>
+                <p>Ready to contribute? Start your open source journey today.</p>
+                <a href="https://github.com" class="cta-button">Join Us on GitHub</a>
             </div>
         </section>
     </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 The Art of Open Source. All rights reserved.</p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
